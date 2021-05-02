@@ -1,4 +1,4 @@
-//https://practice.geeksforgeeks.org/problems/intersection-of-two-sorted-array-1587115620/1
+//https://practice.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
 void insertAns(int k,vector<int> &v){
 	int len = v.size();
 	if(len==0){
