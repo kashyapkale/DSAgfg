@@ -1,6 +1,4 @@
-//https://practice.geeksforgeeks.org/problems/symmetric-tree/1
-//Mirror And Symmetry both codes are in same file
-//Basically to check symmetry of the tree we can check if the mirror image of the tree is equal to the tree
+//https://practice.geeksforgeeks.org/problems/symmetric-tree/1#
 bool mirror(Node* root1, Node* root2) {
 	if (!root1 && !root2)
 		return true;
@@ -17,5 +15,5 @@ bool isSymmetric(struct Node* root)
 	if(!root)
 	    return true;
 
-    return mirror(root,root);
+    return mirror(root->left,root->right);
 }
