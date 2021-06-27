@@ -1,3 +1,4 @@
+//https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1#
 Node* lca(Node* root, int a, int b) {
 	if (!root)
 		return NULL;
