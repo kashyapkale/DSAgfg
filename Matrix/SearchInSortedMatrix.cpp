@@ -21,3 +21,25 @@ bool search(vector<vector<int> > matrix, int n, int m, int x){
 
     return false;
 }
+
+//LeetCode Variation
+int matSearch(vector <vector <int> > &mat, int N, int M, int X){
+	int high = (N * M) - 1;
+	int low = 0;
+
+	while (low <= high) {
+		int mid = low + ((high-low) / 2);
+		int row = mid / M;
+		int col = mid % M;
+		if (mat[row][col] == X)
+			return 1;
+
+		if (mat[row][col] < X)
+			low = mid + 1;
+
+		if (mat[row][col] > X)
+			high = mid - 1;
+	}
+
+	return 0;
+}
