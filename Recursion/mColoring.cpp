@@ -1,3 +1,4 @@
+//https://practice.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1#
 bool isSafe(int node, bool graph[101][101], int color[], int N, int color_Num){
 	for (int k = 0; k < N; k++) {
 		if (node != k && graph[k][node] == 1 && color[k] == color_Num)
