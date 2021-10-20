@@ -1,3 +1,4 @@
+//https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/0
 //Minimum Spanning Tree - Prims Algorithm
 int spanningTree(int V, vector<vector<int> > adj[]){
     vector<int> key(V + 1, INT_MAX);
