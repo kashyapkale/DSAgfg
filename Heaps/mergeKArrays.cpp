@@ -1,4 +1,6 @@
 //https://practice.geeksforgeeks.org/problems/merge-k-sorted-arrays/0
+typedef pair<int,pair<int,int>> mPair;
+
 vector<int> mergeKArrays(vector<vector<int> > arr, int K){
     int rows = K;
     //cout<<rows<<" are Rows"<<endl;
